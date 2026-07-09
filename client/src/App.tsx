@@ -16,11 +16,23 @@ function Router() {
     <Layout>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/index.html" component={Home} />
+        
         <Route path="/about" component={About} />
+        <Route path="/about.html" component={About} />
+        
         <Route path="/curriculum" component={Curriculum} />
+        <Route path="/academics.html" component={Curriculum} />
+        
         <Route path="/admissions" component={Admissions} />
+        <Route path="/admissions.html" component={Admissions} />
+        
         <Route path="/donation" component={Donation} />
+        <Route path="/donate.html" component={Donation} />
+        
         <Route path="/contact" component={Contact} />
+        <Route path="/contact.html" component={Contact} />
+        
         <Route component={NotFound} />
       </Switch>
     </Layout>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murogolo Primary School</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            border: "hsl(214.3 31.8% 91.4%)",
+            input: "hsl(214.3 31.8% 91.4%)",
+            ring: "hsl(215 80% 35%)",
+            background: "hsl(210 20% 98%)",
+            foreground: "hsl(215 50% 20%)",
+            primary: {
+              DEFAULT: "hsl(215 80% 35%)",
+              foreground: "hsl(0 0% 100%)",
+            },
+            secondary: {
+              DEFAULT: "hsl(45 90% 55%)",
+              foreground: "hsl(215 50% 20%)",
+            },
+            muted: {
+              DEFAULT: "hsl(210 20% 94%)",
+              foreground: "hsl(215 20% 45%)",
+            },
+            card: {
+              DEFAULT: "hsl(0 0% 100%)",
+              foreground: "hsl(215 50% 20%)",
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #FAFAFA; color: #19283F; }
+    h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Outfit', sans-serif; }
+    .btn-primary { background-color: #124083; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; font-weight: 500; display: inline-block; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-secondary { background-color: #F4C427; color: #19283F; padding: 0.5rem 1rem; border-radius: 0.375rem; font-weight: 600; display: inline-block; transition: opacity 0.2s; }
+    .btn-secondary:hover { opacity: 0.9; }
+    .btn-outline { border: 1px solid #E2E8F0; padding: 0.5rem 1rem; border-radius: 0.375rem; font-weight: 500; display: inline-block; transition: background-color 0.2s; }
+    .btn-outline:hover { background-color: #F1F5F9; }
+    /* Mobile menu toggle */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+  </style>
+
+</head>
+<body>
+  
+<header class="sticky top-0 z-50 w-full border-b border-border/40 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+  <div class="container mx-auto px-4 md:px-6 flex h-20 items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="bg-primary p-2 rounded-lg flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+      </div>
+      <div class="flex flex-col">
+        <span class="font-heading font-bold text-xl leading-none text-primary tracking-tight">Murogolo</span>
+        <span class="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">Primary School</span>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-sm font-medium text-foreground hover:text-primary transition-colors">Home</a>
+      <a href="about.html" class="text-sm font-medium text-foreground hover:text-primary transition-colors">About Us</a>
+      <a href="academics.html" class="text-sm font-medium text-foreground hover:text-primary transition-colors">Academics</a>
+      <a href="admissions.html" class="text-sm font-medium text-foreground hover:text-primary transition-colors">Admissions</a>
+      <a href="contact.html" class="text-sm font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+      <a href="donate.html" class="btn-secondary ml-4">Donate</a>
+    </nav>
+    <button class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden border-t bg-white p-4">
+    <div class="flex flex-col gap-4">
+      <a href="index.html" class="text-sm font-medium">Home</a>
+      <a href="about.html" class="text-sm font-medium">About Us</a>
+      <a href="academics.html" class="text-sm font-medium">Academics</a>
+      <a href="admissions.html" class="text-sm font-medium">Admissions</a>
+      <a href="contact.html" class="text-sm font-medium">Contact</a>
+      <a href="donate.html" class="btn-secondary text-center inline-block w-full py-2">Donate</a>
+    </div>
+  </div>
+</header>
+
+  <main class="min-h-screen">
+    
+    <div class="bg-primary/5 py-12 md:py-20 border-b border-primary/10">
+      <div class="container mx-auto px-4 md:px-6 text-center max-w-3xl">
+        <h1 class="font-heading text-4xl md:text-5xl font-bold text-primary mb-6">Contact Us</h1>
+        <p class="text-lg md:text-xl text-muted-foreground leading-relaxed">
+          We'd love to hear from you. Get in touch with our administration office.
+        </p>
+      </div>
+    </div>
+    
+    <div class="container mx-auto px-4 md:px-6 py-16 md:py-24 max-w-5xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="font-heading text-2xl font-bold text-primary mb-6">Get in Touch</h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-foreground">Visit Us</h3>
+                <p class="text-muted-foreground">Ha Muila, Kwaaidraai<br/>Limpopo, South Africa</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-foreground">Email Us</h3>
+                <p class="text-muted-foreground">info@murogoloprimary.co.za</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-foreground">Call Us</h3>
+                <p class="text-muted-foreground">+27 15 000 0000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-border">
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium mb-1">Full Name</label>
+              <input type="text" class="w-full px-3 py-2 border border-input rounded-md" placeholder="Enter your name" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Email Address</label>
+              <input type="email" class="w-full px-3 py-2 border border-input rounded-md" placeholder="Enter your email" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Message</label>
+              <textarea class="w-full px-3 py-2 border border-input rounded-md h-32" placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="button" class="btn-primary w-full text-center py-2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+  
+<footer class="bg-primary text-primary-foreground border-t border-primary/20">
+  <div class="container mx-auto px-4 md:px-6 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
+      <div class="col-span-1 md:col-span-1">
+        <a href="index.html" class="flex items-center gap-2 mb-4">
+          <div class="bg-white/10 p-2 rounded-lg flex items-center justify-center backdrop-blur-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          </div>
+          <span class="font-heading font-bold text-xl tracking-tight text-white">Murogolo</span>
+        </a>
+        <p class="text-primary-foreground/80 text-sm leading-relaxed mb-6">
+          Empowering the next generation through quality education, character building, and community engagement in Ha Muila.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-lg mb-4 text-white">Quick Links</h3>
+        <ul class="space-y-3 text-sm text-primary-foreground/80">
+          <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+          <li><a href="academics.html" class="hover:text-secondary transition-colors">Academics</a></li>
+          <li><a href="admissions.html" class="hover:text-secondary transition-colors">Admissions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-lg mb-4 text-white">Support Us</h3>
+        <ul class="space-y-3 text-sm text-primary-foreground/80">
+          <li><a href="donate.html" class="hover:text-secondary transition-colors">Make a Donation</a></li>
+          <li><a href="#" class="hover:text-secondary transition-colors">Volunteer</a></li>
+          <li><a href="#" class="hover:text-secondary transition-colors">Community Partners</a></li>
+          <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-lg mb-4 text-white">Contact Info</h3>
+        <ul class="space-y-3 text-sm text-primary-foreground/80">
+          <li class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mt-0.5 text-secondary"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Ha Muila, Kwaaidraai<br/>Limpopo, South Africa</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-secondary"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>info@murogoloprimary.co.za</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-secondary"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+            <span>+27 15 000 0000</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/60">
+      <p>&copy; 2026 Murogolo Primary School. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

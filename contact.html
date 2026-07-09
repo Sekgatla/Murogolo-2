@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Murogolo Primary School</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +14,10 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <div class="logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
         </div>
         <div class="logo-text">
           <span class="logo-title">Murogolo</span>
@@ -27,7 +30,6 @@
         <a href="academics.html" class="nav-link">Academics</a>
         <a href="admissions.html" class="nav-link">Admissions</a>
         <a href="contact.html" class="nav-link">Contact</a>
-        <a href="donate.html" class="btn btn-secondary">Donate</a>
       </nav>
       <button id="mobile-menu-toggle" class="mobile-toggle">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -39,7 +41,6 @@
       <a href="academics.html" class="mobile-nav-link">Academics</a>
       <a href="admissions.html" class="mobile-nav-link">Admissions</a>
       <a href="contact.html" class="mobile-nav-link">Contact</a>
-      <a href="donate.html" class="btn btn-secondary">Donate</a>
     </div>
   </header>
   <main>
@@ -50,62 +51,10 @@
         <p class="page-desc">We'd love to hear from you. Get in touch with our administration office.</p>
       </div>
     </div>
-    
     <div class="section">
-      <div class="container grid-2 grid-2-start">
-        <div>
-          <h2 class="section-title">Get in Touch</h2>
-          
-          <div class="contact-list">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <div class="contact-title">Visit Us</div>
-                <div class="contact-text">Ha Muila, Kwaaidraai<br/>Limpopo, South Africa</div>
-              </div>
-            </div>
-            
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              </div>
-              <div>
-                <div class="contact-title">Email Us</div>
-                <div class="contact-text">info@murogoloprimary.co.za</div>
-              </div>
-            </div>
-            
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-              </div>
-              <div>
-                <div class="contact-title">Call Us</div>
-                <div class="contact-text">+27 15 000 0000</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <form>
-            <div class="form-group">
-              <label class="form-label">Full Name</label>
-              <input type="text" class="form-control" placeholder="Enter your name" />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Email Address</label>
-              <input type="email" class="form-control" placeholder="Enter your email" />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Message</label>
-              <textarea class="form-control" placeholder="How can we help you?"></textarea>
-            </div>
-            <button type="button" class="btn btn-primary" style="width: 100%;">Send Message</button>
-          </form>
-        </div>
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p style="margin-bottom: 24px; color: var(--text-muted); font-size: 18px;">Visit us at Ha Muila, Kwaaidraai or email info@murogoloprimary.co.za.</p>
       </div>
     </div>
   
@@ -114,58 +63,42 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="footer-brand">
-            <div class="footer-brand-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-            </div>
-            <span class="logo-title" style="color: white;">Murogolo</span>
-          </a>
-          <p style="font-size: 14px; opacity: 0.8; line-height: 1.6;">
-            Empowering the next generation through quality education, character building, and community engagement in Ha Muila.
+          <h3 class="footer-title">Murogolo Primary</h3>
+          <p class="footer-desc">
+            Providing quality foundation, intermediate, and senior phase education to the community of Ha Muila since its establishment.
           </p>
         </div>
         <div>
-          <h3 class="footer-title">Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-          </ul>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Ha Muila, Kwaaidraai, Tshitale,<br/>Makhado, Limpopo</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>P.O. Box 354, Muila</span>
+          </div>
         </div>
         <div>
-          <h3 class="footer-title">Support Us</h3>
-          <ul class="footer-links">
-            <li><a href="donate.html">Make a Donation</a></li>
-            <li><a href="#">Volunteer</a></li>
-            <li><a href="#">Community Partners</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="footer-title">Contact Info</h3>
-          <ul class="footer-contact">
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Ha Muila, Kwaaidraai<br/>Limpopo, South Africa</span>
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <span>info@murogoloprimary.co.za</span>
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-              <span>+27 15 000 0000</span>
-            </li>
-          </ul>
+          <h3 class="footer-title">School Hours</h3>
+          <div class="hours-table">
+            <div class="hours-row">
+              <span>Mon - Thu:</span>
+              <span>07:30 - 14:30</span>
+            </div>
+            <div class="hours-row">
+              <span>Friday:</span>
+              <span>07:30 - 13:00</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-closed">Weekends:</span>
+              <span class="hours-closed">Closed</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Murogolo Primary School. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
       </div>
     </div>
   </footer>
